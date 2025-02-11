@@ -1,5 +1,10 @@
+:root {
+  --spoiler-color: hsl(0, 0%, 0%);
+}
+
 body {
   font-family: sans-serif;
+  color: var(--spoiler-color);
 }
 
 p {
@@ -7,20 +12,20 @@ p {
 }
 
 .post {
-  padding: 1rem 0.4rem;
-  background-color: hsl(0, 0%, 92%);
-  border-radius: 15px;
-  margin-bottom: 0.8rem;
+  background-color: hsl(216, 12%, 92%);
+  padding: 1rem;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
   max-inline-size: 400px;
   margin-inline: auto;
 }
 
 .spoiler {
-  background-color: hsl(0, 0%, 0%);
+  background-color: var(--spoiler-color);
+  transition: background-color 0.5s ease-in;
   cursor: pointer;
-  transition: background-color 0.8s;
 }
 
 .spoiler:hover {
-  background-color: transparent;
+  background-color: initial;
 }
