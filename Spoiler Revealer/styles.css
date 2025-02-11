@@ -1,0 +1,26 @@
+body {
+  font-family: sans-serif;
+}
+
+p {
+  line-height: 1.5em;
+}
+
+.post {
+  padding: 1rem 0.4rem;
+  background-color: hsl(0, 0%, 92%);
+  border-radius: 15px;
+  margin-bottom: 0.8rem;
+  max-inline-size: 400px;
+  margin-inline: auto;
+}
+
+.spoiler {
+  background-color: hsl(0, 0%, 0%);
+  cursor: pointer;
+  transition: background-color 0.8s;
+}
+
+.spoiler:hover {
+  background-color: transparent;
+}
